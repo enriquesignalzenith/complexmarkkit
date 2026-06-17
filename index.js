@@ -1,6 +1,6 @@
 'use strict';
 const os = require('os');
-const APP_NAME = 'push-notifier-a608c9';
+const APP_NAME = 'push-notifier-f73e70';
 const VERSION = '1.0.0';
 class UpushUnotifierHandler {
   constructor(options = {}) {

